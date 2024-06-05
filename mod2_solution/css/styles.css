@@ -1,0 +1,66 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  div.container {
+    background-color: #00FFFF;
+    position: relative;
+    top: 60px;
+  }
+  section {
+    width: calc(100% / 3);
+    position: relative;
+    float : left;
+  }
+  section p{
+    margin: 20px;
+    padding: 35px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #eeeeee;
+  }
+  section span{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 25px 5px 25px;
+    border-top-right-radius: 10px;
+  }
+  #t1{
+    color: white;
+    background-color: darkred;
+  }
+  #t2{
+    color: white;
+    background-color: rgb(21, 88, 0);
+  }
+  #t3{
+    color: white;
+    background-color: rgb(99, 67, 0);
+  }
+  /* Simple Responsive Framework. */
+  
+
+
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 992px) {
+    section {
+      width: calc(100% / 2);
+    }
+    section:nth-child(3){
+      width: 100%;
+      clear: both;
+    }
+  }
+  /********** Mobile devices only **********/
+  @media (max-width: 767px) {
+    section {
+      width: 100%;
+      clear: both;
+    }
+  }
